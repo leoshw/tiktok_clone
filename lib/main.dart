@@ -13,7 +13,7 @@ class TiktokApp extends StatelessWidget {
     return MaterialApp(
       title: 'TikTok App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple),
       ),
     );
   }
