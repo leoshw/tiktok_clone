@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:tiktok_clone/Constants/gaps.dart';
 import 'package:tiktok_clone/constants/sizes.dart';
+import 'package:tiktok_clone/login/login.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
+
+  void onLoginTap(BuildContext context) {
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (context) => const LoginScreen()));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +52,9 @@ class SignUpScreen extends StatelessWidget {
             ),
             Gaps.h5,
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                onLoginTap(context);
+              },
               child: Text(
                 'Log in',
                 style: TextStyle(
