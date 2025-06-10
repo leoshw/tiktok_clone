@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tiktok_clone/Constants/gaps.dart';
 import 'package:tiktok_clone/constants/sizes.dart';
 
 class AuthButton extends StatelessWidget {
   final String text;
-  final IconData icon;
+  final FaIcon icon;
 
   const AuthButton({super.key, required this.text, required this.icon});
 
@@ -13,14 +14,20 @@ class AuthButton extends StatelessWidget {
     return FractionallySizedBox(
       widthFactor: 1,
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: Sizes.size14),
+        padding: EdgeInsets.symmetric(
+          vertical: Sizes.size14,
+          horizontal: Sizes.size10,
+        ),
         decoration: BoxDecoration(
           border: Border.all(color: Colors.grey.shade300, width: Sizes.size1),
         ),
-        child: Row(
+        child: Stack(
+          alignment: Alignment.center,
           children: [
-            Icon(icon),
-            SizedBox(width: Sizes.size10),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: icon,
+            ), // allows only one item to align
             Text(
               text,
               textAlign: TextAlign.center,

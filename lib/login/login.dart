@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:tiktok_clone/Constants/gaps.dart';
 import 'package:tiktok_clone/constants/sizes.dart';
 import 'package:tiktok_clone/sign_up/sign_up_screen.dart';
+import 'package:tiktok_clone/Widgets/auth_button.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -29,11 +31,20 @@ class LoginScreen extends StatelessWidget {
               ),
               Gaps.v20,
               Text(
-                "Create a profile, follow other accounts, make your own videos, and more.",
+                "Manage your account, check notifications, comment on videos, and more.",
                 style: TextStyle(fontSize: Sizes.size16, color: Colors.black45),
                 textAlign: TextAlign.center,
               ),
               Gaps.v40,
+              AuthButton(
+                icon: FaIcon(FontAwesomeIcons.user),
+                text: "Use email or password",
+              ),
+              Gaps.v10,
+              AuthButton(
+                icon: FaIcon(FontAwesomeIcons.apple),
+                text: "Continue with Apple",
+              ),
             ],
           ),
         ),
