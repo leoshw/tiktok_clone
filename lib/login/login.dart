@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tiktok_clone/Constants/gaps.dart';
 import 'package:tiktok_clone/constants/sizes.dart';
+// ignore: unused_import
 import 'package:tiktok_clone/sign_up/sign_up_screen.dart';
 import 'package:tiktok_clone/Widgets/auth_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
