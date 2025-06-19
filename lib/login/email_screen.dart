@@ -27,6 +27,20 @@ class EmailScreen extends StatelessWidget {
               "You can always change this later.",
               style: TextStyle(fontSize: 13),
             ),
+            Gaps.v16,
+            TextField(
+              cursorColor: Theme.of(context).primaryColor,
+
+              decoration: InputDecoration(
+                hint: Text("Type your username"),
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey.shade400),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey.shade400),
+                ),
+              ),
+            ),
           ],
         ),
       ),
