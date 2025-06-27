@@ -3,7 +3,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tiktok_clone/Constants/gaps.dart';
 import 'package:tiktok_clone/Widgets/auth_button.dart';
 import 'package:tiktok_clone/constants/sizes.dart';
-import 'package:tiktok_clone/login/email_screen.dart';
 import 'package:tiktok_clone/login/login.dart';
 import 'package:tiktok_clone/login/username_screen.dart';
 
